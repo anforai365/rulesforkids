@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Degradado esférico verde -->
+    <radialGradient id="esfera" cx="38%" cy="32%" r="62%">
+      <stop offset="0%"   stop-color="#b6f55a"/>
+      <stop offset="45%"  stop-color="#5cc800"/>
+      <stop offset="100%" stop-color="#2a6600"/>
+    </radialGradient>
+    <!-- Brillo superior -->
+    <radialGradient id="brillo" cx="42%" cy="28%" r="38%">
+      <stop offset="0%"   stop-color="white" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Sombra -->
+    <radialGradient id="sombra" cx="50%" cy="50%" r="50%">
+      <stop offset="60%"  stop-color="black" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="suavizar">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+
+  <!-- Sombra en el suelo -->
+  <ellipse cx="50" cy="95" rx="32" ry="5" fill="black" opacity="0.18" filter="url(#suavizar)"/>
+
+  <!-- Cuerpo esférico -->
+  <circle cx="50" cy="50" r="44" fill="url(#esfera)"/>
+
+  <!-- Brillo especular -->
+  <circle cx="50" cy="50" r="44" fill="url(#brillo)"/>
+
+  <!-- Ojo izquierdo (guiño — cerrado) -->
+  <path d="M28 36 Q33 31 38 36" stroke="#1a4000" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+
+  <!-- Ojo derecho (abierto) -->
+  <ellipse cx="64" cy="36" rx="5.5" ry="6" fill="#1a4000"/>
+  <ellipse cx="62.5" cy="34.2" rx="1.8" ry="1.8" fill="white" opacity="0.7"/>
+
+  <!-- Sonrisa amplia -->
+  <path d="M30 58 Q50 80 70 58" stroke="#1a4000" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+</svg>

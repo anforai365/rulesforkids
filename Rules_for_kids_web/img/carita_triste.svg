@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Degradado esférico rojo -->
+    <radialGradient id="esfera" cx="38%" cy="32%" r="62%">
+      <stop offset="0%"   stop-color="#ff8a80"/>
+      <stop offset="45%"  stop-color="#e02000"/>
+      <stop offset="100%" stop-color="#6b0000"/>
+    </radialGradient>
+    <radialGradient id="brillo" cx="42%" cy="28%" r="38%">
+      <stop offset="0%"   stop-color="white" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sombra" cx="50%" cy="50%" r="50%">
+      <stop offset="60%"  stop-color="black" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="suavizar">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+
+  <!-- Sombra en el suelo -->
+  <ellipse cx="50" cy="95" rx="32" ry="5" fill="black" opacity="0.18" filter="url(#suavizar)"/>
+
+  <!-- Cuerpo esférico -->
+  <circle cx="50" cy="50" r="44" fill="url(#esfera)"/>
+  <circle cx="50" cy="50" r="44" fill="url(#brillo)"/>
+
+  <!-- Cejas fruncidas -->
+  <path d="M26 33 Q33 28 38 33" stroke="#5a0000" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M62 33 Q67 28 74 33" stroke="#5a0000" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Ojos (enfadados, semicerrados) -->
+  <ellipse cx="32" cy="40" rx="5.5" ry="4.5" fill="#5a0000"/>
+  <ellipse cx="68" cy="40" rx="5.5" ry="4.5" fill="#5a0000"/>
+  <ellipse cx="30.5" cy="38.5" rx="1.8" ry="1.5" fill="white" opacity="0.65"/>
+  <ellipse cx="66.5" cy="38.5" rx="1.8" ry="1.5" fill="white" opacity="0.65"/>
+
+  <!-- Boca enfadada -->
+  <path d="M32 70 Q50 55 68 70" stroke="#5a0000" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+</svg>

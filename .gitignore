@@ -140,6 +140,5 @@ vite.config.ts.timestamp-*
 
 #Config de Supabase
 config.js
-config.local.js
 .env
 

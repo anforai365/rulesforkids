@@ -1,0 +1,3 @@
+// En el .yml de github que habla con Azure hay un punto en el que se inyectan estos secretos y así llegan a Azure
+const SUPABASE_URL = "RELLENADO_POR_GITHUB_ACTIONS";
+const SUPABASE_ANON_KEY = "RELLENADO_POR_GITHUB_ACTIONS";
